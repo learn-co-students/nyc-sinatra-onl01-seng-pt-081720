@@ -23,8 +23,8 @@ ActiveRecord::Schema.define(version: 4) do
   end
 
   create_table "landmarks", force: :cascade do |t|
-    t.string "name"
-    t.string "year_completed"
+    t.string  "name"
+    t.integer "year_completed"
   end
 
   create_table "titles", force: :cascade do |t|
