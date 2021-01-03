@@ -2,7 +2,7 @@
 <form method="POST" action="/figures/<%= @figure.id %>">
 <input id="hidden" type="hidden" name="_method" value="patch">
 <label>Name </label>
-<input type="text" name="figure[name]" id="figure_name"><br>
+<input type="text" name="figure[name]" id="figure_name" value=<%=@figure.name%>><br>
 
 <h3><label>Titles</label></h3>
 <% @titles.each do |title| %>
@@ -23,5 +23,5 @@
 <label>Year: </label>
 <input type="text" name="landmark[year]">
 
-<input type="submit" value="Create New Figure">
+<input type="submit" value="Edit Figure">
 </form>
